@@ -1,0 +1,53 @@
+<!-- https://www.customd.com/articles/13/checking-if-an-element-is-visible-on-screen-using-jquery -->
+<link rel="stylesheet" type="text/css" href="jquery.visible.min.js">
+
+<ul class="milestones-list">
+      <li style="">
+      <div class="milestones-wrapper">
+        <img src="http://dev.sourcingoverseas.com/wp-content/uploads/2015/07/coffee_icon.png" alt="">
+        <span class="span-number">3K</span>
+      </div>
+      <p>
+      <span class="span-milestones">cups of coffee last year</span>
+      </p><p>Yes, we know t hat’s a lot of caffeine. Ever tried triple-brewed coffee? We have. No humans were harmed in the endeavor. But do not try it at home. "</p>
+      <p></p>
+    </li>
+        <li style="">
+      <div class="milestones-wrapper">
+        <img src="http://dev.sourcingoverseas.com/wp-content/uploads/2015/07/coffee_icon.png" alt="">
+        <span class="span-number">3K</span>
+      </div>
+      <p>
+      <span class="span-milestones">cups of coffee last year</span>
+      </p><p>Yes, we know t hat’s a lot of caffeine. Ever tried triple-brewed coffee? We have. No humans were harmed in the endeavor. But do not try it at home. "</p>
+      <p></p>
+    </li>
+        <li style="">
+      <div class="milestones-wrapper">
+        <img src="" alt="">
+        <span class="span-number">4k</span>
+      </div>
+      <p>
+      <span class="span-milestones">loream ipsm</span>
+      </p><p>loream ipsm loream ipsmloream ipsmloream ipsmloream ipsmloream ipsmloream ipsm</p>
+      <p></p>
+    </li>
+
+  </ul>
+
+<script type="text/javascript">
+jQuery(function($){ //window load
+jQuery(window).scroll(function(){//check the scrolling of the window
+if (jQuery('.milestones-list').visible(true)) { //if #element is visible while scrolling
+    var i = 1;//initialise the count
+    jQuery(".milestones-list > li").each(function(){//check for each li element.
+      jQuery(this).fadeIn( i * 3000 );
+      i++;
+    });
+
+}
+});
+
+});
+
+</script>
